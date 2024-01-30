@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazonia</title>
+    <!-- Google Fonts Link For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Amazônia</h1>
+    </header>
+    <div class="t">
+      <h3>A Amazônia é o maior bioma de Floresta Tropical do mundo e compreende uma área de mais de 5 mil km2. Dado as dimensões desse bioma, é de se esperar que ele abrigue uma alta diversidade de animais, sendo que alguns são a cara da nossa floresta! A Amazônia(pt-BR) ou Amazónia(pt-PT?), também chamada de Floresta/Selva Amazônica, Floresta Equatorial da Amazônia, Floresta Pluvial, ou Hileia Amazônica, é uma floresta latifoliada úmida que cobre a maior parte da Bacia Amazônica da América do Sul. Esta bacia abrange 7 milhões de quilômetros quadrados, dos quais 5 milhões e meio de quilômetros quadrados são cobertos pela floresta tropical. Esta região inclui territórios pertencentes a nove nações. A maioria das florestas está contida dentro do Brasil, com 60% da floresta, seguida pelo Peru com 13% e com partes menores na Colômbia, Equador, Bolívia, Venezuela, Guiana, Suriname e França (Guiana Francesa). Estados ou departamentos de quatro nações vizinhas do Brasil têm o nome de Amazonas por isso. A Amazônia representa mais da metade das florestas tropicais remanescentes no planeta e compreende a maior biodiversidade em uma floresta tropical no mundo. É um dos seis grandes biomas brasileiros.</h3>
+      <p align="right">Fonte: Wikipedia</p>
+    </div>
+    <div class="bcontainer">
+      <div class="container">
+        <div class="slider-wrapper">
+          
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+            chevron_left
+          </button>
+
+          <ul class="image-list">
+            <img class="image-item" onclick="acao('arara')" src="imagens/arara.jpeg" alt="img-1" />
+            <img class="image-item" onclick="acao('onça')" src="imagens/onça.jpeg" alt="img-2" />
+            <img class="image-item" onclick="acao('capivara')" src="imagens/capivara.jpeg" alt="img-3" />
+            <img class="image-item" onclick="acao('tucano')" src="imagens/tucano.jpeg" alt="img-4" />
+            <img class="image-item" onclick="acao('arara_azul')" src="imagens/arara_azul.jpeg" alt="img-4" />
+            <img class="image-item" onclick="acao('jacaré')" src="imagens/jacaré.jpeg" alt="img-4" />
+            <img class="image-item" onclick="acao('gaviao')" src="imagens/gaviao_real.jpeg" alt="img-4" />
+          </ul>
+
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            chevron_right
+          </button>
+
+        </div>
+
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+     
+    <div onclick="fechar()" class="extern_modal" >
+      <div class="modal">
+        <div onclick="fechar()" class="fechar"><h3>x</h3></div>
+        <div id="modal-content"><h1></h1><p></p></div>
+      </div>
+    </div> 
+
+  </body>
+</html>
